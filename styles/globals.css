@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .navBarHover {
+        @apply h-12 px-5 rounded-full bg-transparent flex items-center gap-2 duration-300 cursor-pointer text-black;
+    }
+    .navBarHover:hover {
+        color: white;
+    }
+    .hov:hover {
+        color: white;
+    }
+    .bottomNavLi {
+        @apply hover:underline underline-offset-2 cursor-pointer decoration-[1px] duration-200;
+    }
+    .logo {
+        font-weight: 800;
+        font-size:larger;
+        color: rgb(74, 74, 74);
+    }
+}
