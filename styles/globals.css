@@ -2,26 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+@layer components {
+    .navBarHover {
+        @apply h-12 px-5 rounded-full bg-transparent flex items-center gap-2 duration-300 cursor-pointer text-black;
+    }
+    .navBarHover:hover {
+        color: white;
+    }
+    .hov:hover {
+        color: white;
+    }
+    .bottomNavLi {
+        @apply hover:underline underline-offset-2 cursor-pointer decoration-[1px] duration-200;
+    }
+    .logo {
+        font-weight: 800;
+        font-size:larger;
+        color: rgb(74, 74, 74);
+    }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+footer {
+    border-top: 1px solid #e0e0e0;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+.modal {
+    position: fixed;
+    z-index: 11222 !important;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
 }
+  
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+}
+  
+button {
+    margin-top: 10px;
+}
+
+

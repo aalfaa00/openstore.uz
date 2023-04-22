@@ -1,0 +1,141 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: auto;
+  background-color: #ffffff;
+  padding: 20px;
+  z-index: 1;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.menuOpen {
+  transform: translateX(0%);
+}
+
+.menuItems {
+  margin-top: 50px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.menuItem {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.menuItem:hover {
+  color: #f5a623;
+}
+
+.menuButtonLogin {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 14px !important;
+  color: #000000;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.menuButtonRegister {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 60px;
+  font-size: 14px !important;
+  color: #000000;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.closeButton {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 20px;
+  z-index: 1000;
+  color: #000000;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+
+
+.closeButton:hover {
+  color: #f5a623;
+}
+
+
+.menuDivider {
+  margin: 10px 0;
+  height: 1px;
+  background-color: #050505;
+  opacity: 0.5;
+  
+}
+
+
+
+.menuButtonRegister:hover {
+  color: #f5a623;
+}
+
+.menuButtonLogin:hover {
+  color: #f5a623;
+}
+
+
+.foo{
+  margin-right: 40px !important;
+  font-size: 30px;
+  animation-duration: 6s;
+
+}
+
+.foo:hover {
+  color: #f5a623;
+}
+
+.footer{
+  margin-top: 100px !important;
+}
+
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  margin-top: 5rem;
+}
+
+.footer {
+  margin-top: auto;
+}
